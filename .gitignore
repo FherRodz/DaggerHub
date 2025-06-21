@@ -1,0 +1,49 @@
+# Node modules
+node_modules/
+**/node_modules/
+
+# Build output
+.next/
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.*
+
+# Runtime files
+.pids
+*.pid
+*.seed
+*.pid.lock
+
+# IDE/Editor settings
+.vscode/
+.idea/
+*.swp
+
+# Optional lockfiles (keep only the one you use)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Coverage/testing
+coverage/
+.nyc_output/
+jest.config.js
+
+# Next.js output
+out/
