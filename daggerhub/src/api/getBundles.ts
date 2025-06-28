@@ -7,6 +7,7 @@ export type Bundle = {
   name: string;
   description: string;
   userId: string;
+  username: string;
 };
 
 const getBundles = async (): Promise<Bundle[]> => {
