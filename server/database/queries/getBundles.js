@@ -19,8 +19,6 @@ const getBundles = async (req, res) => {
                 }
 
                 res.send({
-                    success: true,
-                    message: "Retrieved all bundles successfully",
                     res: results
                 });
             });

@@ -1,7 +1,8 @@
 export default function Home() {
   return (
     <div>
-      <p>testing testing</p>
+      <p>Testign testing</p>
+      <a href="/auth/login">Login</a>
     </div>
   );
 }
