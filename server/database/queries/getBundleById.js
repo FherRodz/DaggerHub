@@ -4,7 +4,7 @@ const getBundleById = async (req, res) => {
     try {
         const { bundleId } = req.body;
 
-        const query = "SELECT * FROM daggerhub.Bundles WHERE id = ?"
+        const query = "SELECT id, name, description, downloads, createdAt, lastUpdated, username FROM daggerhub.Bundles WHERE id = ?"
 
         pool.getConnection((err, connection) => {
             if (err) {

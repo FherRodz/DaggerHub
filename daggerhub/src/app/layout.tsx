@@ -1,15 +1,7 @@
+import './globals.css';
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { Providers } from './providers';
+import { evelethClean } from './fonts';
 
 export const metadata: Metadata = {
   title: "Dagger Hub",
@@ -22,9 +14,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+    <html lang="en" className={evelethClean.variable}>
+      <body>
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   );

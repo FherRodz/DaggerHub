@@ -1,8 +1,13 @@
+'use client';
+
+import Dashboard from "@/components/dashboard";
+import Header from "@/components/header";
+
 export default function Home() {
   return (
-    <div>
-      <p>Testign testing</p>
-      <a href="/auth/login">Login</a>
-    </div>
+    <>
+      <Header/>
+      <Dashboard/>
+    </>
   );
 }
